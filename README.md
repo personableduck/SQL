@@ -12,34 +12,32 @@ If you're completely unfamiliar with the command line, I suggest you take some t
      - For Macs Users - www.youtube.com/watch?v=b93ehHTCZAE
      - For Windows Users - www.youtube.com/watch?v=MBBWVgE0ewk
 
-## Installation
+## Installation Instructions for sqlite3:
 
-Instructions to run the application without setting up the Qt project code.
-1. Download Deployment_executable.zip.
-2. Unzip the file.
-3. Run CASA_GUI.exe.
+Mac Users
 
-Instructions for local project setup:
+- You should have sqlite3 installed as part of the default mac os settings, but it may be an older version.  Please make you have version 3.8 or later.
+- How to test to ensure you have it installed:
 
-1. Install Qt creator (community edition)
-	- choose the Qt 5.4.2 MSVC2013 OpenGL 64-bit kit
-2. Install Basler Pylon v4.2.1 (64-bit)
-	- If plugging in the Basler camera via USB does not automatically install
-		the required driver, navigate to the
-		Basler\pylon 4\bin\drivers\Basler Pylon USB Driver folder and execute
-		dpinst.exe
-3. Install openvc v2.4.9
-4. Download fftw 64-bit or get it from Kiran to avoid having to create the .lib files
-	- downloading directly will require the .lib files to be created manually.
-5. Make sure all Microsoft Visual C++ redistributables are up-to-date
-	- Visual Studio 2013
-6. Create a new Qt Widgets Application
-7. Add all existing CASA_GUI .pro, .cpp, .h, and .ui files to the project
-8. Configure the CASA_GUI.pro file to contain the appropriate paths to the
-	Pylon, genicam, opencv, and fftw .lib files as given in the .pro file.
-9. Add the following four paths in Qt by going to the Projects window,
-	scrolling down to Build Environment, clicking on Details, selecting
-	the PATH variable, and clicking
+1. Open the terminal (instructions if you don't know how to open the terminal  - https://www.youtube.com/watch?v=zw7Nd67_aFw)
+2. Enter sqlite3 at the prompt
+3. sqlite3 should launch. The version of sqlite should be displayed on the next line.  Make sure you have version 3.8. or later.  
+4. enter ".quit" to exit 
+
+- Upgrade Instructions - https://www.techonia.com/5763/upgrade-sqlite-os-x-mavericks-yosemite
+- Installation instructions - http://www.tutorialspoint.com/sqlite/sqlite_installation.htm
+
+PC Users
+
+- You'll have to install sqlite3 manually
+- Here's some installation instructions (http://www.tutorialspoint.com/sqlite/sqlite_installation.htm)
+
+1.  Go to the sqlite3 download page (http://www.sqlite.org/download.html)
+2.  Load the windows binaries version.  Make sure you select the version that includes "A bundle of command-line tools for managing SQLite database files, including the command-line shell program." 
+3.  Unzip the files 
+4.  Create a folder on your hard drive (e.g., make a folder called sqlite3 in your c: drive)
+5.  Paste the files into this folder
+6.  There should be sqlite3 executable file (sqlite3.exe) in the folder.  Double click this file and a terminal should open in a new window.
 	
 ## Meta
 
